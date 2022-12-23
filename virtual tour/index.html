@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="./tour.js"></script>
+</head>
+<body>
+    <a-scene id="scene">
+        <a-sky id="sky" color="black"></a-sky>
+            <a-camera id="camera">
+                <a-entity>
+                    <a-text id="title" position="0 1.4 -2" text="color: white; align:center; value: Virtual tour"></a-text>
+                </a-entity>
+                <a-entity id="place" tour></a-entity>
+                <!-- <a-box src="Taj_Mahal_in_India_-_Kristian_Bertel.jpg" position="0 1.4 -2"></a-box> -->
+            </a-camera>
+    </a-scene>
+</body>
+</html>
